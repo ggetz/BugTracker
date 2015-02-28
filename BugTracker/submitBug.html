@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Traker.css">
+    <script type='text/javascript' src="Scripts/knockout/knockout-3.3.0.js"></script>
+    <script type='text/javascript' src="Scripts/submitBugViewModel.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div class="content">
+        <h1>Submit A Bug</h1>
+        <form data-bind="submit: save">
+            <table>
+                <tr>
+                    <td>Bug Name:</td>
+                    <td><input type="text" data-bind="textInput: Name" /></td>
+                </tr>
+                <tr>
+                    <td>Description:</td>
+                    <td><textarea type="text" data-bind="textinput: Description"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Catagory:</td>
+                    <td>
+                        <select>
+                            <option>None</option>
+                            <option>Code</option>
+                            <option>Art</option>
+                            <option>Music</option>
+                            <option>Marketing</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Assign To:</td>
+                    <td>
+                        <select>
+                            <option>Nobody</option>
+                            <option>Gabby</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button class="Green" type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+    </div>
+    <script type='text/javascript'>
+        ko.applyBindings(submitViewModel);
+    </script>
+</body>
+</html>
