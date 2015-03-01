@@ -4,12 +4,10 @@ using System.Linq;
 using System.Web;
 
 
-public class BugModel
+public class picture
 {
-    public int BugID { get; set; }
+    public int PictureID { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
-
-    public string Assigned { get; set; }
-
+    public string Path { get; set; }
 }

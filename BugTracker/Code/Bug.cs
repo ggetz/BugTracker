@@ -29,6 +29,8 @@ namespace BugTracker
 
         public void Save(SqlConnection conn)
         {
+            if (String.IsNullOrEmpty(Name))
+                return;
             try
             {
                     string sqlInsertString = "INSERT INTO Bugs (BugID, Name, Description) VALUES (@bugID, @name, @description)";

@@ -78,6 +78,7 @@ button {
     border: 1px solid #d0d0d0;
     border-radius: 2px;
     padding: 8px 10px;
+    font-size: 12pt;
 }
 
 select {
@@ -85,6 +86,7 @@ select {
     border: 1px solid #d0d0d0;
     border-radius: 2px;
     padding: 8px;
+    font-size: 12pt;
 }
 
 textarea
@@ -102,4 +104,5 @@ input {
     border: 1px solid #d0d0d0;
     border-radius: 2px;
     padding: 8px;
+    font-size: 12pt;
 }

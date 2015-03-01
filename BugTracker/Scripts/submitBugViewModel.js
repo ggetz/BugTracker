@@ -10,7 +10,7 @@
             contentType: "application/json",
             data: jsonData,
             dataType: "json",
-            sucess: function () { }
+            success: function () { window.open("BugList.html"), "_self"}
         });
 
     }
